@@ -29,6 +29,11 @@ var makeConcurrent = require('sync-primitives')(Promise)
 
 ## API
 
+  * [Semaphore](#semaphore)
+  * [Condition](#condition)
+  * [Event](#event)
+  * [Barrier](#barrier)
+
 ### Semaphore
 
 #### constructor
