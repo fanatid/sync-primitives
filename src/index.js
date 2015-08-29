@@ -1,7 +1,8 @@
-import getCustomPromise from 'custom-promise-for-package'
+let syncPrimitives = {
+  Barrier: require('./barrier'),
+  Condition: require('./condition'),
+  Event: require('./event'),
+  Semaphore: require('./semaphore')
+}
 
-export default getCustomPromise((Promise) => {
-  return {
-    Semaphore: require('./semaphore')(Promise)
-  }
-})
+export default syncPrimitives

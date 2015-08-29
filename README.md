@@ -46,7 +46,7 @@ var makeConcurrent = require('sync-primitives')(Promise)
     * `boolean` [blocking=true]
     * `boolean` [timeout=-1]
 
-**return**: `Promise<boolean>`
+**return**: `Promise.<boolean>`
 
 #### release
 
@@ -57,13 +57,28 @@ var makeConcurrent = require('sync-primitives')(Promise)
     * `boolean` [blocking=true]
     * `boolean` [timeout=-1]
 
-**return**: `Promise<[boolean, *]>`
+**return**: `Promise.<[boolean, *]>`
 
 ### Condition
 ...
 
 ### Event
-...
+
+#### constructor
+
+#### isSet
+
+**return**: `boolean`
+
+#### set
+
+#### clear
+
+#### wait
+
+  * `number` timeout
+
+**return**: `Promise.<boolean>`
 
 ### Barrier
 ...
