@@ -14,19 +14,6 @@
 npm install sync-primitives
 ```
 
-## Initialization
-
-sync-primitives uses [promises](https://promisesaplus.com/) but doesn't have hard dependencies on the specific library.
-
-You can use [embedded promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), [bluebird](https://github.com/petkaantonov/bluebird), [Q](https://github.com/kriskowal/q), [lie](https://github.com/calvinmetcalf/lie), [promise polyfill](https://github.com/jakearchibald/es6-promise) or [other promise library](https://www.npmjs.com/search?q=promises).
-
-All what you need just call module with specific promise object:
-
-```js
-var Promise = require('bluebird')
-var makeConcurrent = require('sync-primitives')(Promise)
-```
-
 ## API
 
   * [Semaphore](#semaphore)
