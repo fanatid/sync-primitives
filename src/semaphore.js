@@ -7,7 +7,7 @@ export default class Semaphore {
    * @param {number} [value=1]
    */
   constructor (value = 1) {
-    this._value = (isFinite(value) && value > 0) || value === Infinity ? value : 1
+    this._value = ((isFinite(value) && value > 0) || value === Infinity) ? value : 1
     this._count = 0
     this._queue = []
   }
